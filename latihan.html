@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio System Analyst - M. Yazid</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Plus Jakarta Sans & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #121212;
+            color: #e5e5e5;
+        }
+        .theme-card {
+            background: linear-gradient(145deg, #1e1e1e, #181818);
+            border: 1px solid #2e2e2e;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        .theme-card:hover {
+            border-color: #d97706;
+            box-shadow: 0 12px 30px -10px rgba(217, 119, 6, 0.2);
+        }
+        .theme-nav {
+            background: rgba(18, 18, 18, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .accent-gradient-text {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-600 selection:text-white">
+
+    <!-- Header Navigasi -->
+    <header class="sticky top-0 z-50 theme-nav">
+        <div class="max-w-6xl mx-auto px-4 py-3.5 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-amber-600/20 group-hover:bg-amber-500 transition-all">
+                    Y
+                </div>
+                <div>
+                    <span class="font-extrabold text-base tracking-wider text-white block uppercase">M. YAZID</span>
+                    <span class="text-[11px] text-amber-500 font-mono tracking-widest">NIM: A12.2025.07396</span>
+                </div>
+            </a>
+
+            <!-- Navigasi Utama -->
+            <nav class="hidden md:flex items-center gap-1 text-sm font-semibold text-neutral-300">
+                <a href="#profil" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-neutral-800 transition-all">Profil</a>
+                <a href="#keahlian" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-neutral-800 transition-all">Keahlian</a>
+                <a href="#pendidikan" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-neutral-800 transition-all">Pendidikan</a>
+                <a href="#proyek" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-neutral-800 transition-all">Proyek</a>
+                <a href="#kontak" class="ml-3 px-5 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold transition-all shadow-lg shadow-amber-600/20">
+                    Hubungi Saya
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-10 space-y-16">
+
+        <!-- Hero Section -->
+        <section class="grid lg:grid-cols-12 gap-6 items-center">
+            <!-- Banner Utama -->
+            <div class="lg:col-span-8 theme-card rounded-2xl p-8 space-y-5 relative overflow-hidden">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-amber-950/60 border border-amber-800/50 text-amber-500 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-code-branch text-amber-500"></i> Semester 3 &bull; System Analysis Student
+                </div>
+                
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight uppercase">
+                    M. Yazid <br>
+                    <span class="accent-gradient-text">System Analyst & Web Developer</span>
+                </h1>
+                
+                <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+                    Mahasiswa Program Studi Sistem Informasi di Universitas Dian Nuswantoro. Berfokus pada analisis proses bisnis, pemodelan sistem (DFD & ERD), serta pengembangan aplikasi web berbasis struktur data yang efisien.
+                </p>
+
+                <div class="pt-4 flex flex-wrap gap-4 border-t border-neutral-800">
+                    <a href="#proyek" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-sm transition-all shadow-lg shadow-amber-600/20 flex items-center gap-2">
+                        <i class="fa-solid fa-diagram-project"></i> Eksplorasi Proyek
+                    </a>
+                    <a href="#kontak" class="px-6 py-3 rounded-xl bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 text-neutral-200 font-bold text-sm transition-all">
+                        Kirim Pesan &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Cards Highlight -->
+            <div class="lg:col-span-4 space-y-4">
+                <div class="theme-card rounded-2xl p-5 border-l-4 border-l-amber-500 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-600/10 text-amber-500 flex items-center justify-center text-xl shrink-0 font-bold">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-neutral-400 font-bold uppercase tracking-wider">Status Pendidikan</div>
+                        <div class="text-base font-extrabold text-white">Semester 3 S1 SI</div>
+                        <div class="text-xs text-neutral-400">UDINUS Semarang</div>
+                    </div>
+                </div>
+
+                <div class="theme-card rounded-2xl p-5 border-l-4 border-l-neutral-500 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-neutral-800 text-neutral-300 flex items-center justify-center text-xl shrink-0 font-bold">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-neutral-400 font-bold uppercase tracking-wider">Fokus Utama</div>
+                        <div class="text-base font-extrabold text-white">System Analysis</div>
+                        <div class="text-xs text-neutral-400">Business Process & Database</div>
+                    </div>
+                </div>
+
+                <div class="theme-card rounded-2xl p-5 border-l-4 border-l-stone-500 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-stone-800 text-stone-300 flex items-center justify-center text-xl shrink-0 font-bold">
+                        <i class="fa-solid fa-id-badge"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-neutral-400 font-bold uppercase tracking-wider">Nomor Induk Mahasiswa</div>
+                        <div class="text-base font-extrabold text-white font-mono">A12.2025.07396</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- A. Bagian Profil Saya -->
+        <section id="profil" class="theme-card rounded-2xl p-6 md:p-8">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                
+                <!-- Frame Foto Profil Manual dari Folder Resource -->
+                <div class="relative shrink-0">
+                    <div class="w-44 h-52 rounded-xl overflow-hidden border-2 border-amber-600/40 bg-neutral-900 shadow-xl">
+                        <img src="resource/PhotoMYazid.jpg" 
+                             alt="Foto M. Yazid" 
+                             class="w-full h-full object-cover object-center"
+                             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 h-full flex flex-col justify-center items-center\'><i class=\'fa-solid fa-user-shield text-5xl text-amber-500 mb-2\'></i><p class=\'text-xs font-bold text-neutral-300 uppercase\'>Foto belum ada di folder resource</p></div>';">
+                    </div>
+                </div>
+                <!-- Bio Profil -->
+                <div class="space-y-4 text-neutral-300 w-full">
+                    <div class="border-b border-neutral-800 pb-3 flex justify-between items-center">
+                        <h2 class="text-2xl font-black text-white flex items-center gap-2.5 uppercase tracking-wide">
+                            <i class="fa-solid fa-user-gear text-amber-500"></i> A. Profil Saya
+                        </h2>
+                    </div>
+
+                    <p class="text-base leading-relaxed">
+                        Halo! Saya <strong class="text-white font-bold">M. Yazid</strong>, mahasiswa aktif semester 3 Program Studi Sistem Informasi di Fakultas Ilmu Komputer, Universitas Dian Nuswantoro (NIM: A12.2025.07396). Saya berfokus dalam bidang <span class="text-amber-500 font-semibold">System Analysis</span>, perancangan basis data, pemodelan proses bisnis, serta rekayasa perangkat lunak.
+                    </p>
+                    <p class="text-sm text-neutral-400 leading-relaxed">
+                        Sebagai calon System Analyst, saya masih belajar melakukan analisis kebutuhan sistem, merancang arsitektur data terstruktur (ERD & DFD), serta mengimplementasikan struktur data tingkat lanjut untuk memecahkan permasalahan kompleks pada aplikasi web.
+                    </p>
+
+                    <div class="p-4 rounded-xl bg-neutral-950 border border-neutral-800 text-xs text-neutral-400 flex items-center gap-3">
+                        <i class="fa-solid fa-terminal text-amber-500 text-lg"></i>
+                        <div>
+                            <span class="text-neutral-200 font-bold block">Status Akademik:</span>
+                            Aktif kuliah Semester 3 &bull; Fakultas Ilmu Komputer UDINUS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- B. Bagian Keahlian & Hobi -->
+        <section id="keahlian" class="space-y-6">
+            <h2 class="text-2xl font-black text-white flex items-center gap-2.5 border-b border-neutral-800 pb-3 uppercase tracking-wide">
+                <i class="fa-solid fa-microchip text-amber-500"></i> B. Keahlian & Hobi
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Keahlian Utama -->
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <h3 class="text-lg font-bold text-amber-500 flex items-center gap-2 border-b border-neutral-800 pb-2 uppercase tracking-wider">
+                        <i class="fa-solid fa-code"></i> 1. Keahlian Utama (Technical Skills)
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="p-3.5 rounded-xl bg-neutral-950 border border-neutral-800 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-sitemap text-amber-500 text-xl"></i>
+                                <div>
+                                    <div class="text-sm font-bold text-white">System Analysis</div>
+                                    <div class="text-xs text-neutral-400">Analisis Proses Bisnis, DFD & ERD</div>
+                                </div>
+                            </div>
+                            <span class="text-xs font-mono bg-amber-950 text-amber-400 px-2 py-1 rounded font-bold border border-amber-800/50">Core</span>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-neutral-950 border border-neutral-800 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-brands fa-html5 text-orange-500 text-xl"></i>
+                                <div>
+                                    <div class="text-sm font-bold text-white">Pemrograman Web</div>
+                                    <div class="text-xs text-neutral-400">HTML5, CSS3, & PHP</div>
+                                </div>
+                            </div>
+                            <span class="text-xs font-mono bg-neutral-800 text-neutral-300 px-2 py-1 rounded font-bold">Web Dev</span>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-neutral-950 border border-neutral-800 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-database text-amber-600 text-xl"></i>
+                                <div>
+                                    <div class="text-sm font-bold text-white">Database & Struktur Data</div>
+                                    <div class="text-xs text-neutral-400">MySQL & Algoritma Struktur Data</div>
+                                </div>
+                            </div>
+                            <span class="text-xs font-mono bg-neutral-800 text-neutral-300 px-2 py-1 rounded font-bold">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobi & Minat -->
+                <div class="theme-card rounded-2xl p-6 space-y-4">
+                    <h3 class="text-lg font-bold text-amber-500 flex items-center gap-2 border-b border-neutral-800 pb-2 uppercase tracking-wider">
+                        <i class="fa-solid fa-person-swimming"></i> 2. Hobi & Minat
+                    </h3>
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="p-4 rounded-xl bg-neutral-950 border border-neutral-800 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-amber-600/10 text-amber-500 flex items-center justify-center text-lg font-bold shrink-0">
+                                <i class="fa-solid fa-person-swimming"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-white">Renang</div>
+                                <div class="text-xs text-neutral-400">Olahraga fisik untuk menjaga stamina & fokus</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-neutral-950 border border-neutral-800 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-amber-600/10 text-amber-500 flex items-center justify-center text-lg font-bold shrink-0">
+                                <i class="fa-solid fa-volleyball"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-white">Voli</div>
+                                <div class="text-xs text-neutral-400">Melatih kerja sama tim dan koordinasi cepat</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-neutral-950 border border-neutral-800 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-amber-600/10 text-amber-500 flex items-center justify-center text-lg font-bold shrink-0">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-white">Analisis Sistem</div>
+                                <div class="text-xs text-neutral-400">Eksplorasi aliran data & perancangan sistem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- C. Bagian Riwayat Pendidikan -->
+        <section id="pendidikan" class="space-y-4">
+            <h2 class="text-2xl font-black text-white flex items-center gap-2.5 border-b border-neutral-800 pb-3 uppercase tracking-wide">
+                <i class="fa-solid fa-user-graduate text-amber-500"></i> C. Riwayat Pendidikan
+            </h2>
+
+            <div class="theme-card rounded-2xl overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-neutral-950 text-amber-500 text-xs font-bold uppercase tracking-wider border-b border-neutral-800">
+                                <th class="p-4 pl-6">Tingkat Pendidikan</th>
+                                <th class="p-4">Nama Instansi / Sekolah</th>
+                                <th class="p-4">Tahun</th>
+                                <th class="p-4 pr-6">Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-neutral-800 text-sm text-neutral-300">
+                            <tr class="hover:bg-neutral-800/40 transition-colors">
+                                <td class="p-4 pl-6 font-bold text-white">Sekolah Menengah Kejuruan (SMK)</td>
+                                <td class="p-4">SMK N 1 Blora</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-neutral-800 text-neutral-300 rounded font-mono text-xs">2021 - 2024</span></td>
+                                <td class="p-4 pr-6 text-neutral-400">Jurusan Otomotif</td>
+                            </tr>
+                            <tr class="hover:bg-neutral-800/40 transition-colors bg-amber-950/10">
+                                <td class="p-4 pl-6 font-bold text-white">Perguruan Tinggi (S1)</td>
+                                <td class="p-4 font-semibold text-amber-500">
+                                    <a href="http://www.dinus.ac.id" target="_blank" class="hover:underline flex items-center gap-1.5">
+                                        Universitas Dian Nuswantoro <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-amber-600/20 text-amber-400 rounded font-mono text-xs font-bold border border-amber-500/30">2025 - Sekarang</span></td>
+                                <td class="p-4 pr-6 font-semibold text-white"> Program Studi Sistem Informasi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- D. Bagian Proyek & Aktivitas Akademik -->
+        <section id="proyek" class="space-y-6">
+            <h2 class="text-2xl font-black text-white flex items-center gap-2.5 border-b border-neutral-800 pb-3 uppercase tracking-wide">
+                <i class="fa-solid fa-folder-closed text-amber-500"></i> D. Proyek & Aktivitas Akademik
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Proyek 1 -->
+                <article class="theme-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-amber-950 text-amber-400 border border-amber-800/50 rounded-md text-[11px] font-bold uppercase tracking-wider">System Analysis</span>
+                            <i class="fa-solid fa-store text-neutral-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Analisis & Perancangan Sistem Toko Berkah Rizki</h3>
+                        <p class="text-neutral-300 text-xs leading-relaxed">
+                            Analisis menyeluruh proses bisnis toko retail, pembuatan pemodelan aliran data (DFD), serta Entity Relationship Diagram (ERD) untuk otomatisasi inventaris dan penjualan.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-neutral-800 flex flex-wrap gap-1.5 font-mono text-[10px]">
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">Proses Bisnis</span>
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">ERD</span>
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">DFD</span>
+                    </div>
+                </article>
+
+                <!-- Proyek 2 -->
+                <article class="theme-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-stone-900 text-stone-300 border border-stone-700 rounded-md text-[11px] font-bold uppercase tracking-wider">Struktur Data</span>
+                            <i class="fa-solid fa-link text-neutral-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Studi Kasus Double Circular Linked List</h3>
+                        <p class="text-neutral-300 text-xs leading-relaxed">
+                            Implementasi dan visualisasi logika struktur data Double Circular Linked List (DCLL) untuk pengolahan memori terhubung secara efisien tanpa penunjuk NULL.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-neutral-800 flex flex-wrap gap-1.5 font-mono text-[10px]">
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">C++</span>
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">DCLL Algorithm</span>
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">Memory Allocation</span>
+                    </div>
+                </article>
+
+                <!-- Proyek 3 -->
+                <article class="theme-card rounded-2xl p-6 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-neutral-800 text-neutral-300 border border-neutral-700 rounded-md text-[11px] font-bold uppercase tracking-wider">Pemrograman Web</span>
+                            <i class="fa-solid fa-code text-neutral-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Tugas Pemrograman Web 1 & 2</h3>
+                        <p class="text-neutral-300 text-xs leading-relaxed">
+                            Pengembangan halaman portofolio interaktif berbasis HTML5 semantik, styling CSS modern, tabel terstruktur, serta form input data lengkap.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-neutral-800 flex flex-wrap gap-1.5 font-mono text-[10px]">
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">HTML5</span>
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">CSS3</span>
+                        <span class="px-2 py-0.5 bg-neutral-900 text-neutral-400 rounded border border-neutral-800">Form Validation</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+
+<!-- E. Bagian Setup & Daily Stack (Gaul & Estetik) -->
+<section id="setup" class="theme-card rounded-2xl p-6 md:p-8 space-y-6">
+    <div class="border-b border-neutral-800 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
+        <div>
+            <h2 class="text-2xl font-black text-white flex items-center gap-2.5 uppercase tracking-wide">
+                <i class="fa-solid fa-laptop-code text-amber-500"></i> E. Daily Tech & Fuel
+            </h2>
+            <p class="text-neutral-400 text-xs mt-1">Gaya tempur, amunisi koding, dan tools andalan sehari-hari.</p>
+        </div>
+        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold rounded-full w-fit">
+            ⚡ Powered by Coffee & Music
+        </span>
+    </div>
+
+    <!-- Grid Cards Setup -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- Card 1: Hardware -->
+        <div class="bg-neutral-950/80 border border-neutral-800 rounded-xl p-4 space-y-3 hover:border-amber-500/50 transition-all group">
+            <div class="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-amber-500 group-hover:bg-amber-500 group-hover:text-black transition-all">
+                <i class="fa-solid fa-laptop text-lg"></i>
+            </div>
+            <div>
+                <h3 class="text-sm font-bold text-white">Daily Rig</h3>
+                <p class="text-xs text-neutral-400 mt-0.5">MacBook Pro & Mobile Setup</p>
+            </div>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+                Andalan buat buka puluhan tab browser, running Live Server, dan bikin diagram sistem DFD/ERD.
+            </p>
+        </div>
+
+        <!-- Card 2: Code Editor & Tools -->
+        <div class="bg-neutral-950/80 border border-neutral-800 rounded-xl p-4 space-y-3 hover:border-amber-500/50 transition-all group">
+            <div class="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-amber-500 group-hover:bg-amber-500 group-hover:text-black transition-all">
+                <i class="fa-solid fa-code text-lg"></i>
+            </div>
+            <div>
+                <h3 class="text-sm font-bold text-white">Primary IDE</h3>
+                <p class="text-xs text-neutral-400 mt-0.5">VS Code + Dark Theme</p>
+            </div>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+                Wajib pake tema gelap (Dark/Amber vibe) + ekstensi Live Server & Tailwind CSS Intellisense.
+            </p>
+        </div>
+
+        <!-- Card 3: Design & Analysis -->
+        <div class="bg-neutral-950/80 border border-neutral-800 rounded-xl p-4 space-y-3 hover:border-amber-500/50 transition-all group">
+            <div class="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-amber-500 group-hover:bg-amber-500 group-hover:text-black transition-all">
+                <i class="fa-solid fa-sitemap text-lg"></i>
+            </div>
+            <div>
+                <h3 class="text-sm font-bold text-white">System Modeling</h3>
+                <p class="text-xs text-neutral-400 mt-0.5">Draw.io& MySQL</p>
+            </div>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+                Senjata wajib buat merancang relasi tabel basis data dan alur sistem bisnis sebelum koding.
+            </p>
+        </div>
+
+        <!-- Card 4: Daily Vibe / Fuel -->
+        <div class="bg-neutral-950/80 border border-neutral-800 rounded-xl p-4 space-y-3 hover:border-amber-500/50 transition-all group">
+            <div class="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-amber-500 group-hover:bg-amber-500 group-hover:text-black transition-all">
+                <i class="fa-solid fa-mug-hot text-lg"></i>
+            </div>
+            <div>
+                <h3 class="text-sm font-bold text-white">Coding Fuel</h3>
+                <p class="text-xs text-neutral-400 mt-0.5">Kopi & Lo-Fi Beats</p>
+            </div>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+                Meningkatkan fokus 200% pas lagi debug error kode PHP atau fixing tampilan HTML/CSS.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- F. Bagian Tafsir Kode & Logika Algoritma -->
+<section id="logika" class="theme-card rounded-2xl p-6 md:p-8 space-y-6">
+    <div class="border-b border-neutral-800 pb-4">
+        <h2 class="text-2xl font-black text-white flex items-center gap-2.5 uppercase tracking-wide">
+            <i class="fa-solid fa-code-compare text-amber-500"></i> F. Code & System Logic Highlight
+        </h2>
+        <p class="text-neutral-400 text-xs mt-1">Implementasi logika struktur data dan analisis basis data pada studi kasus perkuliahan.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-6">
+        <!-- Snippet 1: Logic DCLL -->
+        <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between border-b border-neutral-800 pb-2">
+                <span class="text-xs font-mono font-bold text-amber-500 flex items-center gap-1.5">
+                    <i class="fa-solid fa-terminal"></i> Structure Data: DCLL Pointer
+                </span>
+                <span class="text-[10px] bg-neutral-800 text-neutral-400 px-2 py-0.5 rounded font-mono">C++ / Concept</span>
+            </div>
+            <pre class="bg-neutral-900/90 text-neutral-300 font-mono text-xs p-3.5 rounded-lg overflow-x-auto border border-neutral-800/80 leading-relaxed">
+<code>// Logika Alokasi Memory Node DCLL
+void insertHead(Node** head, int data) {
+    Node* newNode = createNode(data);
+    if (*head == NULL) {
+        newNode->next = newNode;
+        newNode->prev = newNode;
+        *head = newNode;
+    } else {
+        Node* tail = (*head)->prev;
+        newNode->next = *head;
+        newNode->prev = tail;
+        tail->next = newNode;
+        (*head)->prev = newNode;
+        *head = newNode;
+    }
+}</code></pre>
+            <p class="text-xs text-neutral-400 leading-relaxed">
+                <strong class="text-white">Analisis Logika:</strong> Menghubungkan simpul baru (*newNode*) ke simpul kepala (*head*) dan ekor (*tail*) secara dua arah memutar sehingga terhindar dari pemutusan rantai alokasi memori.
+            </p>
+        </div>
+
+        <!-- Snippet 2: Query Relasi Database -->
+        <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between border-b border-neutral-800 pb-2">
+                <span class="text-xs font-mono font-bold text-amber-500 flex items-center gap-1.5">
+                    <i class="fa-solid fa-database"></i> SQL Relational Query
+                </span>
+                <span class="text-[10px] bg-neutral-800 text-neutral-400 px-2 py-0.5 rounded font-mono">MySQL / ERD</span>
+            </div>
+            <pre class="bg-neutral-900/90 text-neutral-300 font-mono text-xs p-3.5 rounded-lg overflow-x-auto border border-neutral-800/80 leading-relaxed">
+<code>-- Relasi Transaksi Toko Berkah Rizki
+SELECT 
+    p.id_penjualan,
+    b.nama_barang,
+    p.jumlah_beli,
+    (p.jumlah_beli * b.harga_satuan) AS total_bayar
+FROM transaksi_penjualan p
+JOIN master_barang b ON p.id_barang = b.id_barang
+WHERE p.tanggal_transaksi = CURRENT_DATE();</code></pre>
+            <p class="text-xs text-neutral-400 leading-relaxed">
+                <strong class="text-white">Analisis Logika:</strong> Penggabungan entitas (*JOIN*) antara tabel transaksi dan master barang untuk kalkulasi data penjualan harian secara efisien tanpa *redundancy*.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- G. Bagian Timeline Perjalanan Akademik -->
+<section id="timeline" class="theme-card rounded-2xl p-6 md:p-8 space-y-6">
+    <div class="border-b border-neutral-800 pb-4">
+        <h2 class="text-2xl font-black text-white flex items-center gap-2.5 uppercase tracking-wide">
+            <i class="fa-solid fa-timeline text-amber-500"></i> G. Academic Journey & Milestones
+        </h2>
+        <p class="text-neutral-400 text-xs mt-1">Jejak langkah perkembangan keahlian selama menempuh studi Sistem Informasi di UDINUS.</p>
+    </div>
+
+    <!-- Timeline List -->
+    <div class="relative border-l-2 border-neutral-800 ml-3 space-y-6 pl-6 py-2">
+        <!-- Milestone 1 -->
+        <div class="relative group">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-amber-500 border-4 border-neutral-900 group-hover:scale-125 transition-transform"></div>
+            <span class="text-[11px] font-bold text-amber-500 font-mono tracking-wider">SEMESTER 1 • Basic Programing</span>
+            <h3 class="text-sm font-bold text-white mt-0.5">Algoritme& Logika Pemrograman</h3>
+            <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
+                Mempelajari struktur pemrograman dasar, logika percabangan, perulangan, dan manipulasi larik (array) menggunakan bahasa C/C++.
+            </p>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="relative group">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-amber-500 border-4 border-neutral-900 group-hover:scale-125 transition-transform"></div>
+            <span class="text-[11px] font-bold text-amber-500 font-mono tracking-wider">SEMESTER 2 • Strategi Algoritme </span>
+            <h3 class="text-sm font-bold text-white mt-0.5">Struktur Data</h3>
+            <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
+                Mendalami konsep memori Linked List, Stack, Queue, serta mulai merancang antarmuka web statis sederhana.
+            </p>
+        </div>
+
+        <!-- Milestone 3 (Aktif) -->
+        <div class="relative group">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-amber-500 border-4 border-neutral-900 ring-4 ring-amber-500/20 animate-pulse"></div>
+            <span class="text-[11px] font-bold text-amber-500 font-mono tracking-wider">SEMESTER 3  • Pemrograman Web Dasar</span>
+            <h3 class="text-sm font-bold text-white mt-0.5"> Web Development</h3>
+            <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
+                Fokus melakukan coding HTML, penguasaan XAMPP, serta integrasi PHP-MySQL.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- H. Bagian Form Pesan Interaktif -->
+<section id="kontak" class="theme-card rounded-2xl p-6 md:p-8 space-y-6">
+    <div class="border-b border-neutral-800 pb-4">
+        <h2 class="text-2xl font-black text-white flex items-center gap-2.5 uppercase tracking-wide">
+            <i class="fa-solid fa-paper-plane text-amber-500"></i> H. Form Pesan Interaktif
+        </h2>
+        <p class="text-neutral-400 text-xs mt-1">Kirimkan pesan, tawaran proyek, atau diskusi melalui form di bawah ini:</p>
+    </div>
+
+    <!-- Form Kontak Profesional -->
+    <form action="simpan.php" method="post" class="space-y-5 max-w-3xl">
+        
+        <!-- Baris 1: Nama Lengkap & Email -->
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="space-y-1.5">
+                <label for="fnama" class="text-xs font-bold text-neutral-300 uppercase tracking-wider block">Nama Lengkap</label>
+                <input type="text" id="fnama" name="fnama" required placeholder="Masukkan nama lengkap..." class="w-full bg-neutral-950 border border-neutral-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all">
+            </div>
+
+            <div class="space-y-1.5">
+                <label for="femail" class="text-xs font-bold text-neutral-300 uppercase tracking-wider block">Email</label>
+                <input type="email" id="femail" name="femail" required placeholder="nama@email.com" class="w-full bg-neutral-950 border border-neutral-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all">
+            </div>
+        </div>
+
+        <!-- Baris 2: No. WhatsApp & Instansi/Kampus -->
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="space-y-1.5">
+                <label for="fhp" class="text-xs font-bold text-neutral-300 uppercase tracking-wider block">No. WhatsApp / HP</label>
+                <input type="tel" id="fhp" name="fhp" placeholder="08xxxxxxxxxx" class="w-full bg-neutral-950 border border-neutral-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all">
+            </div>
+
+            <div class="space-y-1.5">
+                <label for="finstansi" class="text-xs font-bold text-neutral-300 uppercase tracking-wider block">Instansi / Perusahaan / Kampus</label>
+                <input type="text" id="finstansi" name="finstansi" placeholder="Contoh: UDINUS / PT Maju Jaya" class="w-full bg-neutral-950 border border-neutral-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all">
+            </div>
+        </div>
+
+        <!-- Baris 3: Tujuan / Subjek Pesan -->
+        <div class="space-y-1.5">
+            <label for="fsubjek" class="text-xs font-bold text-neutral-300 uppercase tracking-wider block">Tujuan / Subjek Pesan</label>
+            <select id="fsubjek" name="fsubjek" class="w-full bg-neutral-950 border border-neutral-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all">
+                <option value="Diskusi Akademik / Perkuliahan" selected>Diskusi Akademik / Perkuliahan</option>
+                <option value="Tawaran Proyek / Freelance">Tawaran Proyek / Freelance</option>
+                <option value="Konsultasi System Analysis">Konsultasi System Analysis</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+        </div>
+
+        <!-- Baris 4: Pesan Lengkap -->
+        <div class="space-y-1.5">
+            <label for="fpesan" class="text-xs font-bold text-neutral-300 uppercase tracking-wider block">Pesan Lengkap</label>
+            <textarea id="fpesan" name="fpesan" rows="4" required placeholder="Tuliskan pesan atau catatan Anda di sini..." class="w-full bg-neutral-950 border border-neutral-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"></textarea>
+        </div>
+
+        <!-- Baris 5: Tombol Action -->
+        <div class="flex gap-3 pt-2">
+            <button type="submit" class="px-6 py-2.5 bg-amber-600 hover:bg-amber-500 text-white font-bold text-sm rounded-xl shadow-lg shadow-amber-600/20 transition-all flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+            </button>
+            <button type="reset" class="px-6 py-2.5 bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 text-neutral-300 font-bold text-sm rounded-xl transition-all cursor-pointer">
+                Batal / Reset
+            </button>
+        </div>
+    </form>
+</section>
+
+<!-- I. Bagian Footer & Penutup (Footer Official) -->
+<footer class="border-t border-neutral-800/80 pt-8 pb-12 text-center space-y-4">
+    <div class="flex items-center justify-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-500 font-bold text-xs">
+            MY
+        </div>
+        <span class="text-sm font-bold text-white tracking-wider">M. YAZID • A12.2025.07396</span>
+    </div>
+    
+    <p class="text-xs text-neutral-500 max-w-md mx-auto leading-relaxed">
+        Portofolio Akademik dikembangkan untuk memenuhi Tugas Mata Kuliah Pemrograman Web Dasar — Program Studi Sistem Informasi, Universitas Dian Nuswantoro Semarang.
+    </p>
+
+    <div class="text-[11px] text-neutral-600 font-mono pt-2">
+        &copy; 2026 M. Yazid. Built with HTML, Tailwind CSS & VS Code. All rights reserved.
+    </div>
+
+</footer>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-800 bg-neutral-950 py-8 text-center text-xs text-neutral-500 font-mono">
+        <p>&copy; 2026 M. Yazid (NIM: A12.2025.07396) &bull; S1 Sistem Informasi Universitas Dian Nuswantoro</p>
+    </footer>
+
+</body>
+</html>
